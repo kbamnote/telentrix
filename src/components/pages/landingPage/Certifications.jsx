@@ -31,7 +31,7 @@ const Certifications = () => {
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={20}
-          slidesPerView={4}
+          slidesPerView={5}
           pagination={{ clickable: true }}
           autoplay={{
             delay: 2500,
@@ -58,7 +58,7 @@ const Certifications = () => {
         >
           {certificationImages.map((image, index) => (
             <SwiperSlide key={index} className="flex items-center justify-center">
-              <div className="w-full h-32 flex items-center justify-center p-4 bg-white shadow-md rounded-lg">
+              <div className="w-full h-[217px] flex items-center justify-center p-4 rounded-lg">
                 <img 
                   src={image} 
                   alt={`Certification ${index + 1}`} 

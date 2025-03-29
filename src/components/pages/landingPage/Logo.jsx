@@ -16,33 +16,30 @@ const Logo = () => {
 
   return (
     <div className="bg-[#253e91] text-white py-4">
-      <div className="container mx-auto flex items-center justify-center space-x-8 px-4">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
         {/* Call to Action */}
-        <div className="">
-          <p className="text-lg font-bold">To find out how we can empower you, contact us now!</p>
+        <div className="text-center md:text-left">
+          <p className="text-base md:text-lg font-bold">To find out how we can empower you, contact us now!</p>
         </div>
 
-        {/* Flags and Partner Locations Container */}
-       
-          {/* Country Flags */}
-          <div className="flex items-center space-x-8">
-            {countries.map((country) => (
-              <div key={country.name} className="flex flex-col items-center">
-                <img 
-                  src={country.flag} 
-                  alt={`${country.name} Flag`} 
-                  className="w-20 h-20 rounded-full mb-1 object-cover"
-                />
-                <span className="text-xs">{country.name}</span>
-              </div>
-            ))}
-          </div>
+        {/* Country Flags */}
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
+          {countries.map((country) => (
+            <div key={country.name} className="flex flex-col items-center">
+              <img 
+                src={country.flag} 
+                alt={`${country.name} Flag`} 
+                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full mb-1 object-cover"
+              />
+              <span className="text-xs">{country.name}</span>
+            </div>
+          ))}
+        </div>
 
-          {/* Partner Locations */}
-          <div className="text-right ml-4">
-            <p className="text-sm font-semibold">Our Partner Office Locations:</p>
-            <p className="text-xs">Singapore, Ireland, Poland, & Mexico</p>
-         
+        {/* Partner Locations */}
+        <div className="text-center md:text-right md:ml-4">
+          <p className="text-sm font-semibold">Our Partner Office Locations:</p>
+          <p className="text-xs">Singapore, Ireland, Poland, & Mexico</p>
         </div>
       </div>
     </div>
