@@ -7,6 +7,7 @@ import ManageService from './ManageService'
 import OurApproach from './OurApproach'
 import PreferredChoice from './PreferredChoice'
 import Header from '../../common/Header'
+import Footer from '../../common/Footer'
 
 const OurSolutionPage = () => {
   return (
@@ -19,6 +20,7 @@ const OurSolutionPage = () => {
       <ManageService/>
       <OurApproach/>
       <PreferredChoice/>
+      <Footer/>
     </>
   )
 }

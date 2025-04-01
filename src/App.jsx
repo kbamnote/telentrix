@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import HomePage from './components/pages/landingPage/HomePage'
-import OurSolutionPage from './components/pages/oursolutionComponents/ourSolutionPage'
+import OurSolutionPage from './components/pages/oursolutionComponents/OurSolutionPage'
 import CareerPage from './components/pages/careerComponents/CareerPage'
 import ContactPage from './components/pages/contactUsPage/ContactPage'
 import CommunityPage from './components/pages/communityPage/CommunityPage'
