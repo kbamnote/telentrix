@@ -6,6 +6,7 @@ import Optimized from './Optimized'
 import WhatWeOffer from './WhatWeOffer'
 import WhyArtech from './WhyArtech'
 import Certifications from './Certifications'
+import Footer from '../../common/Footer'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
    <WhatWeOffer/>
    <WhyArtech/>
    <Certifications/>
+   <Footer/>
    
    </>
   )

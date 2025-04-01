@@ -15,7 +15,7 @@ import c9 from "../../../assets/c-9.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const certificationImages = [c3, c4, c9, c1, c5, c8, c7, c8, c6, c2];
+const certificationImages = [c3, c4, c9, c1, c5, c8, c7, c6, c2];
 
 const Certifications = () => {
   return (

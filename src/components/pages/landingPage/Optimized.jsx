@@ -13,20 +13,20 @@ const Optimized = () => {
     <div className="w-full max-w-6xl mx-auto px-4 py-8 sm:py-12 flex flex-col md:flex-row items-center overflow-hidden gap-8">
       {/* Text Content Section */}
       <div className="w-full md:w-1/2 space-y-4 sm:space-y-6">
-        <h1 className="text-2xl sm:text-3xl font-bold text-[#253e91]">
+        <h1 className="text-[20px] md:text-[30px] font-medium text-[#253e91]">
           Achieve Optimized Efficiencies Intelligently.
         </h1>
         
         <div className="text-gray-700 space-y-3 sm:space-y-4">
-          <p className="text-base sm:text-lg font-semibold">
+          <p className="text-[14px] font-semibold">
             Workforce Solutions to Managed Services, today most organizations need a complete spectrum of intelligent business solutions. They need experienced partners with expertise who can provide value, flexibility and financial predictability.
           </p>
           
-          <p className="text-base sm:text-lg font-semibold">
+          <p className="text-[14px] font-semibold">
             Plus talent needs opportunities to apply their intellect and progress in their career.
           </p>
           
-          <p className="text-base sm:text-lg font-semibold">
+          <p className="text-[14px] font-semibold">
             We empower both and are the eco system that connects people, technologies and opportunities with intelligence.
           </p>
         </div>
@@ -36,7 +36,7 @@ const Optimized = () => {
       <div className="w-full md:w-1/2 relative mt-6 md:mt-0">
         <div className="aspect-video w-full relative">
           {!isPlaying ? (
-            <div className="relative w-full h-full shadow-lg rounded-lg overflow-hidden">
+            <div className="relative w-full h-full overflow-hidden">
               <img 
                 src={image} 
                 alt="Artech Intelligence" 
@@ -64,7 +64,7 @@ const Optimized = () => {
               </button>
             </div>
           ) : (
-            <div className="shadow-lg rounded-lg overflow-hidden">
+            <div className="overflow-hidden">
               <video 
                 src={video}
                 className="w-full h-full object-cover"

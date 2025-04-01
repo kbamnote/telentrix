@@ -19,7 +19,7 @@ const Logo = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
         {/* Call to Action */}
         <div className="text-center md:text-left">
-          <p className="text-base md:text-lg font-bold">To find out how we can empower you, contact us now!</p>
+          <p className="text-[14px] font-semibold">To find out how we can empower you, contact us now!</p>
         </div>
 
         {/* Country Flags */}
@@ -37,9 +37,9 @@ const Logo = () => {
         </div>
 
         {/* Partner Locations */}
-        <div className="text-center md:text-right md:ml-4">
-          <p className="text-sm font-semibold">Our Partner Office Locations:</p>
-          <p className="text-xs">Singapore, Ireland, Poland, & Mexico</p>
+        <div className="text-center md:text-left md:ml-4">
+          <p className="text-[14px] font-semibold">Our Partner Office Locations:</p>
+          <p className="text-[14px] font-semibold">Singapore, Ireland, Poland, & Mexico</p>
         </div>
       </div>
     </div>
