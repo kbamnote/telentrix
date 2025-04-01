@@ -174,12 +174,12 @@ const Header = () => {
 
                                 {/* Desktop Dropdown Menu */}
                                 {item.hasDropdown && hoverDropdown === item.name && (
-                                    <div className="absolute left-0 mt-2 w-48 lg:w-56 xl:w-64 bg-black/90 shadow-lg rounded-md overflow-hidden z-50 border border-gray-200">
+                                    <div className="absolute left-0 mt-2 w-48 lg:w-56 xl:w-64 bg-black/90 shadow-lg rounded-md overflow-hidden z-50 ">
                                         {item.dropdownItems && item.dropdownItems.map((dropdownItem) => (
                                             <Link
                                                 key={dropdownItem.name}
                                                 to={dropdownItem.link}
-                                                className="block px-4 py-2 lg:py-3 text-xs lg:text-sm text-white hover:bg-[#293b95] hover:text-white border-b border-gray-100 last:border-b-0"
+                                                className="font-semibold block px-4 py-2 lg:py-3 text-xs lg:text-sm text-white hover:bg-[#293b95] hover:text-white border-b-[0.5px] last:border-b-0"
                                             >
                                                 {dropdownItem.name}
                                             </Link>
