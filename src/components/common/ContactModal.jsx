@@ -15,7 +15,7 @@ const ContactModal = ({ isOpen, onClose }) => {
   return (
     <div>
       <div
-        className="fixed inset-0 top-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4 sm:p-6 md:p-10"
+        className="fixed inset-0 top-0 flex items-center justify-center bg-opacity-50 z-50 p-4 sm:p-6 md:p-10"
         onClick={onClose}
       >
         <div

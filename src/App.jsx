@@ -7,6 +7,10 @@ import ContactPage from './components/pages/contactUsPage/ContactPage'
 import CommunityPage from './components/pages/communityPage/CommunityPage'
 import ResourcesPage from './components/pages/resourcePage/ResourcePage'
 import AboutPage from './components/pages/aboutPage/AboutPage'
+import ConsultantJobPage from './components/pages/careerComponents/consultantJob/ConsultantJobPage'
+import Awards from './components/pages/aboutPage/Awards-component/Awards'
+import ContactModal from './components/common/ContactModal'
+
 
 function App() {
  
@@ -21,6 +25,9 @@ function App() {
 <Route path='/resources' element={<ResourcesPage/>}/>
 <Route path='/about' element={<AboutPage/>}/>
 <Route path='/contact' element={<ContactPage/>}/>
+<Route path='/consultant-jobs' element={<ConsultantJobPage/>}/>
+<Route path='/awards' element={<Awards/>}/>
+<Route path='/contact-modal' element={<ContactModal/>} />
     </Routes>
     </>
   )

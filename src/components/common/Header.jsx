@@ -65,7 +65,7 @@ const Header = () => {
             dropdownItems: [
                 { name: 'Artech Advantage', link: '/about' },
                 { name: 'Great Place to Work', link: '/about' },
-                { name: 'Awards', link: '/about/awards' },
+                { name: 'Awards', link: '/awards' },
                 { name: 'Certifications and Accolades', link: '/about' }
             ]
         },
@@ -78,7 +78,7 @@ const Header = () => {
                 { name: 'Managed Services and Project Delivery', link: '/our-solutions' },
                 { name: ' Adobe Platform Services', link: '/our-solutions' },
                 { name: 'Diversity and Inclusion', link: '/our-solutions' },
-                { name: 'Case Studies', link: '/our-solutions' },
+                { name: 'Case Studies', link: '/casestudies' },
             ]
         },
         {
@@ -86,9 +86,9 @@ const Header = () => {
             hasDropdown: true,
             link: '/career',
             dropdownItems: [
-                { name: 'Open Positions', link: '/career' },
-                { name: 'Career Growth', link: '/career' },
-                { name: 'Benefits', link: '/career' }
+                { name: 'Corporate Jobs', link: '/career' },
+                { name: 'Consultant Jobs', link: '/consultant-jobs' },
+               
             ]
         },
         { name: 'Community First Initiatives', hasDropdown: false, link: '/community' },
@@ -97,9 +97,10 @@ const Header = () => {
             hasDropdown: true,
             link: '/resources',
             dropdownItems: [
-                { name: 'Blog', link: '/resources' },
-                { name: 'Case Studies', link: '/resources' },
-                { name: 'Whitepapers', link: '/resources' }
+                { name: 'Articles', link: '/resources' },
+                { name: 'Blogs', link: '/resources' },
+                { name: 'FAQs', link: '/resources' },
+                { name: 'Web Stories', link: '/resources' }
             ]
         },
         { name: 'Contact Us', hasDropdown: false, link: '/contact' }
@@ -174,7 +175,7 @@ const Header = () => {
 
                                 {/* Desktop Dropdown Menu */}
                                 {item.hasDropdown && hoverDropdown === item.name && (
-                                    <div className="absolute left-0 mt-2 w-48 lg:w-56 xl:w-64 bg-black/90 shadow-lg rounded-md overflow-hidden z-50 ">
+                                    <div className="absolute left-0 w-48 lg:w-56 xl:w-64 bg-black/90 shadow-lg rounded-md overflow-hidden z-50 ">
                                         {item.dropdownItems && item.dropdownItems.map((dropdownItem) => (
                                             <Link
                                                 key={dropdownItem.name}
